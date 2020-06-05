@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+         <link rel="icon" href="./images/url_icon.png">
+        
+        <title>Weather</title>
+    </head>
+    <body>
+        <div class="main-content">
+        
+        {{>header}}
+
+        <p>We have used hbs to render dynamic pages</p>
+        <img class = "robo" src="./images/Robo.jpg">
+
+        <form>
+            <br>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+
+        </div>
+       
+        {{>footer}}
+     <script src="./js/app.js"></script>
+    </body>
+</html>
