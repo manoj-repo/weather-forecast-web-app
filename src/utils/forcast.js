@@ -19,7 +19,7 @@ const forecast = (latitude,longitude,callback)=>{
         }
         else
         {
-            callback(undefined,`${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degree out.`);
+            callback(undefined,`${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degree out. The humidity level is ${body.current.humidity} precent`);
             //callback(undefined,response.body.current)
         }
 
@@ -27,3 +27,5 @@ const forecast = (latitude,longitude,callback)=>{
 
 }
 module.exports = forecast;
+
+ /*We have used hbs to render dynamic pages*/

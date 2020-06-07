@@ -9,7 +9,7 @@ const hbs = require('hbs');
 // console.log(path.join(__dirname,'../public'));
 
 const app = express(); // load or generate the express sever
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 //define paths for experess config
 const publicDirectoryPath = path.join(__dirname,'../public');
